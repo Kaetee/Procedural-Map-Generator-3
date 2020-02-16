@@ -1,0 +1,39 @@
+﻿<Window x:Class="MapMaker.MainWindow_Legacy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MapMaker"
+        mc:Ignorable="d"
+        Closed="Window_Closed"
+        Title="MainWindow_Legacy" Height="718" Width="1250">
+    <Grid>
+        <Image VerticalAlignment="Top" HorizontalAlignment="Right" Height="621" Width="1104" Margin="0,0,0,0" Name="mapDisplay" />
+        <Button Content="Regenerate" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonRegenerate"/>
+
+        <Label Content="Landscape" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,46,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Landscape" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowLandscape"/>
+        <Button Content="Biomes" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowBiomes"/>
+
+        <Label Content="Height" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,139,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Global Variance" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeightGlobalVariance"/>
+        <Button Content="Base" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeightBase"/>
+        <Button Content="Noise" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeightNoise"/>
+        <Button Content="Merged" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeightMerged"/>
+        <Button Content="Eroded" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeightEroded"/>
+
+        <Label Content="Heat" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,325,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Latitude" HorizontalAlignment="Left" Margin="10,351,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeatLatitude"/>
+        <Button Content="Noise" HorizontalAlignment="Left" Margin="10,382,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeatNoise"/>
+        <Button Content="Merged" HorizontalAlignment="Left" Margin="10,413,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeatMerged"/>
+        <Button Content="Sectioned" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeatSectioned"/>
+
+        <Label Content="Humidity" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,480,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Global Variance" HorizontalAlignment="Left" Margin="10,506,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHumidityGlobalVariance"/>
+        <Button Content="Noise" HorizontalAlignment="Left" Margin="10,537,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHumidityNoise"/>
+        <Button Content="Merged" HorizontalAlignment="Left" Margin="10,568,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHumidityMerged"/>
+        <Button Content="Sectioned" HorizontalAlignment="Left" Margin="10,599,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHumiditySectioned"/>
+
+        <Button Content="Save" HorizontalAlignment="Left" Margin="10,650,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonSave"/>
+    </Grid>
+</Window>

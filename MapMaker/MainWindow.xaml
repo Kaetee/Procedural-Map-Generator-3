@@ -1,0 +1,30 @@
+﻿<Window x:Class="MapMaker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MapMaker"
+        mc:Ignorable="d"
+        Closed="Window_Closed"
+        Title="MainWindow" Height="718" Width="1250">
+    <Grid>
+        <Image VerticalAlignment="Top" HorizontalAlignment="Right" Height="621" Width="1104" Margin="0,0,0,0" Name="mapDisplay" />
+        <Button Content="Regenerate" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonRegenerate"/>
+
+        <Label Content="Landscape" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,46,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Heightmap" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowHeightmap"/>
+        <Button Content="Biomes" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Height="26" Width="100" IsEnabled="False" Click="ButtonShowBiomes"/>
+
+        <Label Content="Hardness" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,139,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Bedrock" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowBedrockHardness"/>
+        <Button Content="Soil" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowSoilHardness"/>
+
+        <Label Content="Spread Direction" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,232,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="All" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowSpreadDirection"/>
+
+        <Label Content="Other" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,294,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Noise 0" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonShowNoise"/>
+
+        <Button Content="Save" HorizontalAlignment="Left" Margin="10,650,0,0" VerticalAlignment="Top" Height="26" Width="100" Click="ButtonSave"/>
+    </Grid>
+</Window>
